@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75); /* paragrahps */
+  --very-light-gray: hsl(0, 0%, 95%); /*background, headings, buttons */
+
+  --lexen-deca: "Lexend Deca", sans-serif;
+  --big-shoulders: "Big Shoulders Display", cursive;
+}
+
+body {
+  font-size: 15px;
+  margin: 0;
+  font-family: var(--lexen-deca);
+  background-color: var(--very-light-gray);
+}
+
+h1,
+p {
+  color: var(--transparent-white);
+}
+
+.contenedor {
+  display: flex;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  height: calc(100vh - 14px);
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 480px;
+  padding: 37px 45px;
+  width: 300px;
+}
+
+.card h1 {
+  font-family: var(--big-shoulders);
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.card p {
+  line-height: 1.8;
+}
+
+.card button {
+  margin-top: 3rem;
+  border-radius: 40px;
+  padding: 17px 40px;
+  font-family: var(--lexen-deca);
+  font-size: 15px;
+  background-color: var(--very-light-gray);
+  border: unset;
+}
+
+.sedan button {
+  color: var(--bright-orange);
+}
+
+.suvs button {
+  color: var(--dark-cyan);
+}
+
+.luxury button {
+  color: var(--very-dark-cyan);
+}
+
+.sedan {
+  background-color: var(--bright-orange);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.suvs {
+  background-color: var(--dark-cyan);
+}
+.luxury {
+  background-color: var(--very-dark-cyan);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
